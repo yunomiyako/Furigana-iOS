@@ -24,11 +24,12 @@ protocol RequestProtocol {
 
 extension RequestProtocol {
     var baseUrl: String {
-        return "https://jlp.yahooapis.jp"
+        return "https://jlp.yahooapis.jp/"
     }
     var encoding: Alamofire.ParameterEncoding {
         return JSONEncoding.default
     }
+    
     var parameters: Alamofire.Parameters? {
         return nil
     }

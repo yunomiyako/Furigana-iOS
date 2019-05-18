@@ -12,23 +12,18 @@ struct FuriganaRequest : RequestProtocol {
     var parameters: Parameters?
     typealias Response = FuriganaResponse
     var path = "FuriganaService/V1/furigana"
-    
+
     init(appid : String , sentence : String , grade : String) {
         self.parameters = [
             "appid" : appid ,
             "sentence" : sentence ,
             "grade" : grade
-        ]
+        ]        
     }
 }
 
 class FuriganaResponse : ResponseProtocol {
-    var res : [ FuriganaResponseDataModel ]
-    
-}
-
-class FuriganaResponseDataModel : Decodable {
-    let ResultSet : [FuriganaResult]
+    var Result : FuriganaResult
 }
 
 class FuriganaResult : Decodable {
@@ -36,6 +31,10 @@ class FuriganaResult : Decodable {
 }
 
 class Word : Decodable {
+    let Word : [WordDetail]
+}
+
+class WordDetail : Decodable {
     let Surface : String?
     let Furigana : String?
     let Roman : String?

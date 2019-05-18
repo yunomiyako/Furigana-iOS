@@ -7,5 +7,6 @@ target 'yumemi' do
 
   # Pods for yumemi
   pod 'Alamofire'
+  pod 'XMLParsing', :git => 'https://github.com/ShawnMoore/XMLParsing.git'
 
 end

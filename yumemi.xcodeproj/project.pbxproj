@@ -18,6 +18,7 @@
 		35AE686F228FAF68000AA71C /* apiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE686E228FAF68000AA71C /* apiProtocol.swift */; };
 		35AE6873228FB1A4000AA71C /* FuriganaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE6872228FB1A4000AA71C /* FuriganaRepository.swift */; };
 		35AE6875228FB1AC000AA71C /* FuriganaUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE6874228FB1AC000AA71C /* FuriganaUsecase.swift */; };
+		35AE6878228FBF4C000AA71C /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE6877228FBF4C000AA71C /* extension.swift */; };
 		6074E7356C0E02447C57C23F /* Pods_yumemi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFBE14554F38A42BBDDEE44 /* Pods_yumemi.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		35AE686E228FAF68000AA71C /* apiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiProtocol.swift; sourceTree = "<group>"; };
 		35AE6872228FB1A4000AA71C /* FuriganaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaRepository.swift; sourceTree = "<group>"; };
 		35AE6874228FB1AC000AA71C /* FuriganaUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaUsecase.swift; sourceTree = "<group>"; };
+		35AE6877228FBF4C000AA71C /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		3DFBE14554F38A42BBDDEE44 /* Pods_yumemi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yumemi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		35A1DB6F228FAB6F00481977 /* yumemi */ = {
 			isa = PBXGroup;
 			children = (
+				35AE6876228FBF40000AA71C /* utils */,
 				35AE6871228FB196000AA71C /* Usecase */,
 				35AE6870228FB18F000AA71C /* Repository */,
 				35A1DB82228FADD800481977 /* API */,
@@ -111,6 +114,14 @@
 				35AE6874228FB1AC000AA71C /* FuriganaUsecase.swift */,
 			);
 			path = Usecase;
+			sourceTree = "<group>";
+		};
+		35AE6876228FBF40000AA71C /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				35AE6877228FBF4C000AA71C /* extension.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		98334C91F85CD7A7A355FB13 /* Frameworks */ = {
@@ -231,12 +242,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-yumemi/Pods-yumemi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/XMLParsing/XMLParsing.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMLParsing.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -253,6 +266,7 @@
 				35A1DB73228FAB6F00481977 /* ViewController.swift in Sources */,
 				35A1DB71228FAB6F00481977 /* AppDelegate.swift in Sources */,
 				35AE686F228FAF68000AA71C /* apiProtocol.swift in Sources */,
+				35AE6878228FBF4C000AA71C /* extension.swift in Sources */,
 				35A1DB86228FAE0000481977 /* apiConst.swift in Sources */,
 				35AE686D228FAF4B000AA71C /* apiClient.swift in Sources */,
 				35A1DB84228FADF400481977 /* FuriganaRequest.swift in Sources */,

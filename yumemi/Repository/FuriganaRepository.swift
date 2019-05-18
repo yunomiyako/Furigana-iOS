@@ -13,10 +13,15 @@ class FuriganaRepository {
     //近くにいる人数を取得する
     func test() {
         let request = FuriganaRequest(appid: apiConst.appid, sentence: "今日はいい天気ですね", grade: "3")
-        apiClient.call(request: request, success:
+        apiClient.easyCall(request: request, success:
             {res in
                 print("success : test success")
-                print(res)
+                let words = res.Result.WordList
+                for word in words {
+                    for detail in word.Word {
+                        print(detail.Surface)
+                    }
+                }
         }, failure: {
             print("error : test error")
         })
