@@ -20,8 +20,6 @@ class ViewController: UIViewController {
         lowerTextView.text = ""
         lowerTextView.isEditable = false
         upperTextView.delegate = self
-        
-        usecase.test()
     }
     
     
@@ -29,8 +27,14 @@ class ViewController: UIViewController {
 }
 
 extension ViewController : UITextViewDelegate {
-    func textViewDidEndEditing(_ textView: UITextView) {
-        
+    
+    func textViewDidChange(_ textView:UITextView) {
+        guard let text = textView.text else {return}
+        usecase.fetchFurigana(sentence: text) { furigana in
+            DispatchQueue.main.async {
+                self.lowerTextView.text = furigana
+            }
+        }
     }
 }
 

@@ -13,7 +13,7 @@ struct FuriganaRequest : RequestProtocol {
     typealias Response = FuriganaResponse
     var path = "FuriganaService/V1/furigana"
 
-    init(appid : String , sentence : String , grade : String) {
+    init(appid : String , sentence : String , grade : String = "") {
         self.parameters = [
             "appid" : appid ,
             "sentence" : sentence ,
@@ -27,10 +27,10 @@ class FuriganaResponse : ResponseProtocol {
 }
 
 class FuriganaResult : Decodable {
-    let WordList : [Word]
+    let WordList : [WordList]
 }
 
-class Word : Decodable {
+class WordList : Decodable {
     let Word : [WordDetail]
 }
 
@@ -38,7 +38,7 @@ class WordDetail : Decodable {
     let Surface : String?
     let Furigana : String?
     let Roman : String?
-    let SubWordList : [SubWord]?
+    let SubWordList : [WordList]?
 }
 
 class SubWord : Decodable {

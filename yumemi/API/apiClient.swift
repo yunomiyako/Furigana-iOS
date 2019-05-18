@@ -14,6 +14,7 @@ class APIClient {
     static var shared = APIClient()
     private init() {}
     
+    //alamofireで呼ぶとエラーが出るのでURLにクエリをつけて呼ぶやり方でやっている
     func easyCall<T: RequestProtocol>(request: T, success: @escaping (T.Response) -> Void, failure: @escaping () -> Void) {
         let baseUrl = request.baseUrl
         let path = request.path
@@ -26,7 +27,7 @@ class APIClient {
             guard let data = data else {
                 return
             }
-            print(String(data: data, encoding: .utf8)!)
+            //print(String(data: data, encoding: .utf8)!)
             let decoder = XMLDecoder()
             do {
                 let result = try decoder.decode(T.Response.self, from: data)
@@ -58,7 +59,6 @@ class APIClient {
                 let decoder = XMLDecoder()
                 
                 guard let data = d.data else {
-                    print("dataでは来ていない")
                     failure()
                     return
                 }

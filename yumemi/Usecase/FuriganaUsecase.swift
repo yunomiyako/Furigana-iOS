@@ -9,7 +9,20 @@
 import Foundation
 class FuriganaUsecase {
     let rep = FuriganaRepository()
-    func test() {
-        rep.test()
+    
+    func fetchFurigana(sentence : String , completion : @escaping (String) -> ()) {
+        if sentence.isEmpty {
+            completion("")
+            return
+        }
+        rep.fetchFurigana(sentence: sentence) { res in
+            var furigana = ""
+            for word in res.Result.WordList {
+                for detail in word.Word {
+                    furigana += detail.Furigana ?? detail.Surface ?? ""
+                }
+            }
+            completion(furigana)
+        }
     }
 }
