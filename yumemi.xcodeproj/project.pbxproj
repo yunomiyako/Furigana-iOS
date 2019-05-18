@@ -12,6 +12,8 @@
 		35A1DB76228FAB6F00481977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A1DB74228FAB6F00481977 /* Main.storyboard */; };
 		35A1DB78228FAB7300481977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A1DB77228FAB7300481977 /* Assets.xcassets */; };
 		35A1DB7B228FAB7300481977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A1DB79228FAB7300481977 /* LaunchScreen.storyboard */; };
+		35A1DB84228FADF400481977 /* furigana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1DB83228FADF400481977 /* furigana.swift */; };
+		35A1DB86228FAE0000481977 /* apiConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1DB85228FAE0000481977 /* apiConst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		35A1DB77228FAB7300481977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A1DB7A228FAB7300481977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35A1DB7C228FAB7300481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A1DB83228FADF400481977 /* furigana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = furigana.swift; sourceTree = "<group>"; };
+		35A1DB85228FAE0000481977 /* apiConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiConst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		35A1DB6F228FAB6F00481977 /* yumemi */ = {
 			isa = PBXGroup;
 			children = (
+				35A1DB82228FADD800481977 /* API */,
 				35A1DB70228FAB6F00481977 /* AppDelegate.swift */,
 				35A1DB72228FAB6F00481977 /* ViewController.swift */,
 				35A1DB74228FAB6F00481977 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				35A1DB7C228FAB7300481977 /* Info.plist */,
 			);
 			path = yumemi;
+			sourceTree = "<group>";
+		};
+		35A1DB82228FADD800481977 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				35A1DB83228FADF400481977 /* furigana.swift */,
+				35A1DB85228FAE0000481977 /* apiConst.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			files = (
 				35A1DB73228FAB6F00481977 /* ViewController.swift in Sources */,
 				35A1DB71228FAB6F00481977 /* AppDelegate.swift in Sources */,
+				35A1DB86228FAE0000481977 /* apiConst.swift in Sources */,
+				35A1DB84228FADF400481977 /* furigana.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
