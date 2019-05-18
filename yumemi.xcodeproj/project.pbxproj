@@ -12,11 +12,18 @@
 		35A1DB76228FAB6F00481977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A1DB74228FAB6F00481977 /* Main.storyboard */; };
 		35A1DB78228FAB7300481977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A1DB77228FAB7300481977 /* Assets.xcassets */; };
 		35A1DB7B228FAB7300481977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A1DB79228FAB7300481977 /* LaunchScreen.storyboard */; };
-		35A1DB84228FADF400481977 /* furigana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1DB83228FADF400481977 /* furigana.swift */; };
+		35A1DB84228FADF400481977 /* FuriganaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1DB83228FADF400481977 /* FuriganaRequest.swift */; };
 		35A1DB86228FAE0000481977 /* apiConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A1DB85228FAE0000481977 /* apiConst.swift */; };
+		35AE686D228FAF4B000AA71C /* apiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE686C228FAF4B000AA71C /* apiClient.swift */; };
+		35AE686F228FAF68000AA71C /* apiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE686E228FAF68000AA71C /* apiProtocol.swift */; };
+		35AE6873228FB1A4000AA71C /* FuriganaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE6872228FB1A4000AA71C /* FuriganaRepository.swift */; };
+		35AE6875228FB1AC000AA71C /* FuriganaUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE6874228FB1AC000AA71C /* FuriganaUsecase.swift */; };
+		6074E7356C0E02447C57C23F /* Pods_yumemi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFBE14554F38A42BBDDEE44 /* Pods_yumemi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BBED3E7468C8EF572F87B10 /* Pods-yumemi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yumemi.debug.xcconfig"; path = "Target Support Files/Pods-yumemi/Pods-yumemi.debug.xcconfig"; sourceTree = "<group>"; };
+		2E219C3168132B6573D4F10D /* Pods-yumemi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yumemi.release.xcconfig"; path = "Target Support Files/Pods-yumemi/Pods-yumemi.release.xcconfig"; sourceTree = "<group>"; };
 		35A1DB6D228FAB6F00481977 /* yumemi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yumemi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A1DB70228FAB6F00481977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35A1DB72228FAB6F00481977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,8 +31,13 @@
 		35A1DB77228FAB7300481977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A1DB7A228FAB7300481977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35A1DB7C228FAB7300481977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35A1DB83228FADF400481977 /* furigana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = furigana.swift; sourceTree = "<group>"; };
+		35A1DB83228FADF400481977 /* FuriganaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaRequest.swift; sourceTree = "<group>"; };
 		35A1DB85228FAE0000481977 /* apiConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiConst.swift; sourceTree = "<group>"; };
+		35AE686C228FAF4B000AA71C /* apiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiClient.swift; sourceTree = "<group>"; };
+		35AE686E228FAF68000AA71C /* apiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiProtocol.swift; sourceTree = "<group>"; };
+		35AE6872228FB1A4000AA71C /* FuriganaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaRepository.swift; sourceTree = "<group>"; };
+		35AE6874228FB1AC000AA71C /* FuriganaUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuriganaUsecase.swift; sourceTree = "<group>"; };
+		3DFBE14554F38A42BBDDEE44 /* Pods_yumemi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yumemi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6074E7356C0E02447C57C23F /* Pods_yumemi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,8 @@
 			children = (
 				35A1DB6F228FAB6F00481977 /* yumemi */,
 				35A1DB6E228FAB6F00481977 /* Products */,
+				D9F4A1ED886869BFC86B2F06 /* Pods */,
+				98334C91F85CD7A7A355FB13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +73,8 @@
 		35A1DB6F228FAB6F00481977 /* yumemi */ = {
 			isa = PBXGroup;
 			children = (
+				35AE6871228FB196000AA71C /* Usecase */,
+				35AE6870228FB18F000AA71C /* Repository */,
 				35A1DB82228FADD800481977 /* API */,
 				35A1DB70228FAB6F00481977 /* AppDelegate.swift */,
 				35A1DB72228FAB6F00481977 /* ViewController.swift */,
@@ -72,10 +89,45 @@
 		35A1DB82228FADD800481977 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				35A1DB83228FADF400481977 /* furigana.swift */,
+				35A1DB83228FADF400481977 /* FuriganaRequest.swift */,
 				35A1DB85228FAE0000481977 /* apiConst.swift */,
+				35AE686C228FAF4B000AA71C /* apiClient.swift */,
+				35AE686E228FAF68000AA71C /* apiProtocol.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		35AE6870228FB18F000AA71C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				35AE6872228FB1A4000AA71C /* FuriganaRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		35AE6871228FB196000AA71C /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				35AE6874228FB1AC000AA71C /* FuriganaUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		98334C91F85CD7A7A355FB13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DFBE14554F38A42BBDDEE44 /* Pods_yumemi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9F4A1ED886869BFC86B2F06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BBED3E7468C8EF572F87B10 /* Pods-yumemi.debug.xcconfig */,
+				2E219C3168132B6573D4F10D /* Pods-yumemi.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35A1DB7F228FAB7300481977 /* Build configuration list for PBXNativeTarget "yumemi" */;
 			buildPhases = (
+				507D7CACFAC7C67364128428 /* [CP] Check Pods Manifest.lock */,
 				35A1DB69228FAB6F00481977 /* Sources */,
 				35A1DB6A228FAB6F00481977 /* Frameworks */,
 				35A1DB6B228FAB6F00481977 /* Resources */,
+				EBCAB0FBED6EB07F25F2EC3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +198,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		507D7CACFAC7C67364128428 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yumemi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBCAB0FBED6EB07F25F2EC3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yumemi/Pods-yumemi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yumemi/Pods-yumemi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35A1DB69228FAB6F00481977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,8 +252,12 @@
 			files = (
 				35A1DB73228FAB6F00481977 /* ViewController.swift in Sources */,
 				35A1DB71228FAB6F00481977 /* AppDelegate.swift in Sources */,
+				35AE686F228FAF68000AA71C /* apiProtocol.swift in Sources */,
 				35A1DB86228FAE0000481977 /* apiConst.swift in Sources */,
-				35A1DB84228FADF400481977 /* furigana.swift in Sources */,
+				35AE686D228FAF4B000AA71C /* apiClient.swift in Sources */,
+				35A1DB84228FADF400481977 /* FuriganaRequest.swift in Sources */,
+				35AE6875228FB1AC000AA71C /* FuriganaUsecase.swift in Sources */,
+				35AE6873228FB1A4000AA71C /* FuriganaRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +401,7 @@
 		};
 		35A1DB80228FAB7300481977 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BBED3E7468C8EF572F87B10 /* Pods-yumemi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +420,7 @@
 		};
 		35A1DB81228FAB7300481977 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E219C3168132B6573D4F10D /* Pods-yumemi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

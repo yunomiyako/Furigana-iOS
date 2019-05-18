@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    private let usecase = FuriganaUsecase()
     @IBOutlet weak var upperTextView: UITextView!
     @IBOutlet weak var lowerTextView: UITextView!
     
@@ -20,11 +20,17 @@ class ViewController: UIViewController {
         lowerTextView.text = ""
         lowerTextView.isEditable = false
         upperTextView.delegate = self
+        
+        usecase.test()
     }
+    
+    
     
 }
 
 extension ViewController : UITextViewDelegate {
-    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        
+    }
 }
 

@@ -1,5 +1,5 @@
 //
-//  furigana.swift
+//  FuriganaUsecase.swift
 //  yumemi
 //
 //  Created by kitaharamugirou on 2019/05/18.
@@ -7,3 +7,9 @@
 //
 
 import Foundation
+class FuriganaUsecase {
+    let rep = FuriganaRepository()
+    func test() {
+        rep.test()
+    }
+}
